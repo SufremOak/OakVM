@@ -1,0 +1,6 @@
+#oak _start
+
+    self value db 0
+    ==> new db.var, "Hello, World!"
+
+#oak _end

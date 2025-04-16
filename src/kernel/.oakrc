@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+source ./main.sh
+
+export PATH=$PATH:$NEWHOME/.local/bin
+
+if [ -f "$HOME/.oakrc" ]; then
+    source "$HOME/.oakrc"
+fi
+
+# Additional customizations
+export EDITOR=vim
+export PAGER=less
+export LANG=en_US.UTF-8
+export TERM=xterm-256color
+
+export NIX_CONFIG=./etc/configuration.nix
+export PS1='\[\e[32m\]\u@\h \[\e[34m\]\w\[\e[0m\]$ '
